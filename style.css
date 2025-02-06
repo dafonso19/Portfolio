@@ -162,3 +162,72 @@ align-self: stretch;
 html {
 scroll-behavior: smooth;
 }
+
+
+
+/* Estilização dos projetos */
+
+.project-image {
+    display: block;
+    max-width: 40%;  /* Define um tamanho máximo */
+    height: auto;
+    margin: 20px auto;  /* Centraliza horizontalmente */
+    border-radius: 10px;  /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 0px; /* espacamento acima da lista de projetos*/
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 40%;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.projects h2 { /* titulo projects*/
+    font-size: 38px;
+    margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+}
+.projects p { /* frase abaixo do titulo*/
+    font-size: 18px;
+    color: #555;  
+    margin-bottom: 60px; /* Espaço abaixo da frase */
+}
+
+.project h3 { /* titulo do projeto*/ 
+    margin: 15px 0 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.project p { /* descricao do projeto */
+    padding: 0 25px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transition: 0.3s;
+}
